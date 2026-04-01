@@ -1,0 +1,25 @@
+{
+    type: UnitType
+    speed: 2.2
+    health: 180
+    armor: 1
+    hitSize: 8
+    flying: false
+    weapons: [
+        {
+            name: sporeling-weapon
+            reload: 25
+            x: 0
+            y: 2
+            mirror: false
+            bullet: {
+                type: BasicBulletType
+                damage: 9
+                speed: 3.5
+                lifetime: 35
+                width: 6
+                height: 8
+            }
+        }
+    ]
+}

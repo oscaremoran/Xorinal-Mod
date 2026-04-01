@@ -1,0 +1,9 @@
+{
+    type: Wall
+    size: 1
+    health: 460
+    requirements: [
+        bio-mass/6
+    ]
+    research: core-shard
+}

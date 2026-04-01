@@ -1,0 +1,29 @@
+{
+    type: ItemTurret
+    size: 2
+    range: 160
+    reload: 30
+    health: 400
+    targetAir: true
+    targetGround: true
+    inaccuracy: 3
+    ammoTypes: {
+        spore-cluster: {
+            type: BasicBulletType
+            damage: 18
+            speed: 4
+            lifetime: 40
+            width: 8
+            height: 10
+            splashDamage: 12
+            splashDamageRadius: 16
+            status: spore-slowed
+            statusDuration: 120
+        }
+    }
+    requirements: [
+        spore-cluster/35
+        bio-mass/20
+    ]
+    research: spore-extractor
+}

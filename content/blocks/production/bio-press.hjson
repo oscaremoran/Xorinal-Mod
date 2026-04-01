@@ -1,0 +1,21 @@
+{
+    type: GenericCrafter
+    size: 2
+    craftTime: 90
+    health: 280
+    hasItems: true
+    consumeItems: [
+        {
+            items: [
+                spore-cluster/2
+                bio-mass/1
+            ]
+        }
+    ]
+    outputItem: mycelium-fiber/1
+    requirements: [
+        spore-cluster/30
+        bio-mass/20
+    ]
+    research: spore-extractor
+}

@@ -1,0 +1,11 @@
+{
+    type: Drill
+    size: 2
+    tier: 2
+    drillTime: 280
+    health: 320
+    requirements: [
+        spore-cluster/12
+    ]
+    research: core-shard
+}

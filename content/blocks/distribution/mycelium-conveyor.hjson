@@ -1,0 +1,11 @@
+{
+    type: Conveyor
+    size: 1
+    speed: 0.04
+    displayedSpeed: 7
+    health: 65
+    requirements: [
+        spore-cluster/1
+    ]
+    research: core-shard
+}

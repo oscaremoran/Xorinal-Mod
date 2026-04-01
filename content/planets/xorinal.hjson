@@ -1,0 +1,26 @@
+{
+    type: Planet
+    parent: sun
+    radius: 0.85
+    orbitRadius: 50
+    orbitTime: 14400
+    rotateTime: 8000
+    hasAtmosphere: true
+    atmosphereColor: "3E7B2F40"
+    iconColor: "5DAE3F"
+    lightColor: "7BCC5F"
+    startSector: 0
+    alwaysUnlocked: true
+    defaultCore: core-shard
+    generator: {
+        type: PlanetGenerator
+    }
+    meshLoader: {
+        type: HexMesher
+        divisions: 6
+    }
+    sectorSize: 2
+    defaultEnv: 0
+    accessible: true
+    visible: true
+}

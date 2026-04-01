@@ -1,0 +1,11 @@
+{
+    type: StorageBlock
+    size: 3
+    itemCapacity: 1000
+    health: 600
+    requirements: [
+        spore-cluster/50
+        bio-mass/30
+    ]
+    research: core-shard
+}

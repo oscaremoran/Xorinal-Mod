@@ -1,0 +1,6 @@
+{
+    type: Item
+    color: "4A8C3F"
+    hardness: 2
+    cost: 0.7
+}
