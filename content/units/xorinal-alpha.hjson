@@ -1,0 +1,40 @@
+{
+    type: flying
+    flying: true
+    speed: 3
+    accel: 0.08
+    drag: 0.04
+    rotateSpeed: 8
+    hitSize: 8
+    health: 150
+    armor: 0
+    itemCapacity: 30
+    buildSpeed: 0.5
+    mineTier: 1
+    mineSpeed: 5
+    engineSize: 1.8
+    engineOffset: 5.7
+    range: 70
+    faceTarget: false
+    weapons: [
+        {
+            name: xorinal-alpha-weapon
+            reload: 17
+            x: 2.75
+            y: 0.5
+            top: false
+            ejectEffect: casing1
+            bullet: {
+                type: BasicBulletType
+                damage: 11
+                speed: 2.5
+                lifetime: 60
+                width: 7
+                height: 9
+                shootEffect: shootSmall
+                smokeEffect: shootSmallSmoke
+                ammoMultiplier: 2
+            }
+        }
+    ]
+}

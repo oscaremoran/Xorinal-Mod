@@ -1,0 +1,32 @@
+{
+    type: UnitFactory
+    size: 3
+    health: 500
+    plans: [
+        {
+            unit: xorinal-sporeling
+            time: 600
+            requirements: [
+                spore-cluster/15
+                bio-mass/10
+            ]
+        }
+        {
+            unit: xorinal-drifter
+            time: 750
+            requirements: [
+                spore-cluster/20
+                bio-mass/15
+            ]
+        }
+    ]
+    consumes: {
+        power: 1.2
+    }
+    requirements: [
+        spore-cluster/40
+        bio-mass/30
+        mycelium-fiber/15
+    ]
+    research: xorinal-bio-press
+}

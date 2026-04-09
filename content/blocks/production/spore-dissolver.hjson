@@ -1,0 +1,25 @@
+{
+    type: GenericCrafter
+    size: 2
+    craftTime: 60
+    health: 260
+    hasItems: true
+    hasLiquids: true
+    liquidCapacity: 30
+    outputLiquid: {
+        liquid: xorinal-spore-solution
+        amount: 0.2
+    }
+    consumes: {
+        items: {
+            items: [
+                spore-cluster/3
+            ]
+        }
+    }
+    requirements: [
+        spore-cluster/20
+        bio-mass/15
+    ]
+    research: xorinal-bio-press
+}

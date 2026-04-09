@@ -1,0 +1,11 @@
+{
+    type: LiquidRouter
+    size: 1
+    health: 80
+    liquidCapacity: 20
+    requirements: [
+        bio-mass/3
+        spore-cluster/2
+    ]
+    research: xorinal-spore-conduit
+}

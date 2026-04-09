@@ -1,0 +1,12 @@
+{
+    type: BufferedItemBridge
+    size: 1
+    range: 4
+    bufferCapacity: 14
+    health: 100
+    requirements: [
+        spore-cluster/6
+        bio-mass/4
+    ]
+    research: xorinal-mycelium-junction
+}

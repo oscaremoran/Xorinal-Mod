@@ -1,0 +1,10 @@
+{
+    type: Conduit
+    size: 1
+    health: 65
+    liquidCapacity: 16
+    requirements: [
+        bio-mass/1
+    ]
+    research: xorinal-spore-dissolver
+}

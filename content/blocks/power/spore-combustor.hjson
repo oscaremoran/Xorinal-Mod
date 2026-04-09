@@ -1,0 +1,20 @@
+{
+    type: ConsumeGenerator
+    size: 2
+    powerProduction: 1.5
+    itemDuration: 90
+    health: 300
+    hasItems: true
+    consumes: {
+        items: {
+            items: [
+                spore-cluster/1
+            ]
+        }
+    }
+    requirements: [
+        spore-cluster/25
+        bio-mass/15
+    ]
+    research: xorinal-spore-extractor
+}

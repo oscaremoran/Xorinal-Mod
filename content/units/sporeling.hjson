@@ -1,5 +1,5 @@
 {
-    type: UnitType
+    type: legs
     speed: 2.2
     health: 180
     armor: 1

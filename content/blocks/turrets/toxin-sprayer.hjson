@@ -1,0 +1,29 @@
+{
+    type: LiquidTurret
+    size: 2
+    range: 110
+    reload: 3
+    health: 350
+    targetAir: true
+    targetGround: true
+    inaccuracy: 5
+    liquidCapacity: 20
+    ammoTypes: {
+        xorinal-spore-solution: {
+            type: LiquidBulletType
+            liquid: xorinal-spore-solution
+            damage: 4
+            speed: 4
+            lifetime: 28
+            collidesAir: true
+            status: wet
+            statusDuration: 180
+        }
+    }
+    requirements: [
+        spore-cluster/30
+        bio-mass/25
+        mycelium-fiber/10
+    ]
+    research: xorinal-spore-launcher
+}

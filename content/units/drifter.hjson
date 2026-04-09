@@ -1,0 +1,26 @@
+{
+    type: flying
+    speed: 3
+    health: 120
+    armor: 0
+    hitSize: 7
+    engineOffset: 5
+    engineSize: 2.5
+    weapons: [
+        {
+            name: drifter-weapon
+            reload: 40
+            x: 0
+            y: 1
+            mirror: false
+            bullet: {
+                type: BasicBulletType
+                damage: 7
+                speed: 3
+                lifetime: 40
+                width: 5
+                height: 7
+            }
+        }
+    ]
+}

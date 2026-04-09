@@ -1,0 +1,9 @@
+{
+    type: Wall
+    size: 2
+    health: 1840
+    requirements: [
+        bio-mass/24
+    ]
+    research: xorinal-bio-wall
+}

@@ -1,0 +1,9 @@
+{
+    type: Router
+    size: 1
+    health: 80
+    requirements: [
+        spore-cluster/3
+    ]
+    research: xorinal-mycelium-conveyor
+}

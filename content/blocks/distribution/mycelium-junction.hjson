@@ -1,0 +1,12 @@
+{
+    type: Junction
+    size: 1
+    speed: 26
+    capacity: 6
+    health: 70
+    requirements: [
+        spore-cluster/2
+        bio-mass/1
+    ]
+    research: xorinal-spore-router
+}

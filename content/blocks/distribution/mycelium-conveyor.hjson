@@ -7,5 +7,5 @@
     requirements: [
         spore-cluster/1
     ]
-    research: core-shard
+    research: xorinal-core-sporocyst
 }

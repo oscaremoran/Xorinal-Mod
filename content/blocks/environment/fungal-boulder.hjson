@@ -1,0 +1,5 @@
+{
+    type: Prop
+    variants: 2
+    breakable: true
+}

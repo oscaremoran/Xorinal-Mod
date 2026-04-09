@@ -25,5 +25,5 @@
         spore-cluster/35
         bio-mass/20
     ]
-    research: spore-extractor
+    research: xorinal-spore-extractor
 }

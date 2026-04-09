@@ -1,0 +1,28 @@
+{
+    type: legs
+    speed: 1.4
+    health: 450
+    armor: 4
+    hitSize: 12
+    legCount: 6
+    legLength: 12
+    legSpeed: 0.3
+    legMoveSpace: 1.2
+    weapons: [
+        {
+            name: myceloid-weapon
+            reload: 15
+            x: 4
+            y: -1
+            mirror: true
+            bullet: {
+                type: BasicBulletType
+                damage: 14
+                speed: 4
+                lifetime: 30
+                width: 7
+                height: 9
+            }
+        }
+    ]
+}

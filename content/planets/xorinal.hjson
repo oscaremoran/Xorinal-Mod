@@ -1,26 +1,29 @@
 {
-    type: Planet
     parent: sun
-    radius: 0.85
+    radius: 1
     orbitRadius: 50
     orbitTime: 14400
     rotateTime: 8000
     hasAtmosphere: true
+    bloom: false
     atmosphereColor: "3E7B2F40"
-    iconColor: "5DAE3F"
-    lightColor: "7BCC5F"
+    atmosphereRadIn: 0.02
+    atmosphereRadOut: 0.3
+    iconColor: "3E7B2F"
+    lightColor: "4A8C3F80"
+    landCloudColor: "3E7B2F80"
     startSector: 0
     alwaysUnlocked: true
-    defaultCore: core-shard
-    generator: {
-        type: PlanetGenerator
-    }
-    meshLoader: {
-        type: HexMesher
-        divisions: 6
-    }
-    sectorSize: 2
+    defaultCore: xorinal-core-sporocyst
+    generator: SerpuloPlanetGenerator
+    gridSize: 2
     defaultEnv: 0
     accessible: true
     visible: true
+    hiddenItems: [
+        copper, lead, metaglass, graphite, silicon, titanium,
+        thorium, scrap, surge-alloy, phase-fabric,
+        blast-compound, pyratite, beryllium, tungsten,
+        oxide, carbide, fissile-matter, dormant-cyst
+    ]
 }
