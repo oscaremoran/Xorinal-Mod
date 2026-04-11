@@ -4,10 +4,11 @@
     health: 1100
     itemCapacity: 4000
     isFirstTier: true
-    unitType: xorinal-sporewalker
+    unitType: xorinal-core-scout
     alwaysUnlocked: true
     requirements: []
     research: {
+        planet: xorinal
         root: true
         name: "Xorinal"
         requiresUnlock: false

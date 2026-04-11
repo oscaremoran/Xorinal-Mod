@@ -1,5 +1,6 @@
 {
     parent: sun
+    solarSystem: sun
     radius: 1
     orbitRadius: 50
     orbitTime: 14400
@@ -15,11 +16,26 @@
     startSector: 0
     alwaysUnlocked: true
     defaultCore: xorinal-core-sporocyst
-    generator: SerpuloPlanetGenerator
-    gridSize: 2
-    defaultEnv: 0
     accessible: true
     visible: true
+    clearSectorOnLose: true
+    allowWaves: true
+    prebuildBase: false
+    allowLaunchSchematics: false
+    allowLaunchToNumbered: false
+    allowLaunchLoadout: false
+    allowSectorInvasion: false
+    generator: {
+        octaves: 3
+        persistence: 0.5
+        scale: 20
+        mag: 0.7
+        thresh: 1.1
+        min: 100
+        max: 100
+        radMin: 220
+        radMax: 600
+    }
     hiddenItems: [
         copper, lead, metaglass, graphite, silicon, titanium,
         thorium, scrap, surge-alloy, phase-fabric,
