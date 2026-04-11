@@ -6,7 +6,10 @@
     isFirstTier: true
     unitType: xorinal-core-scout
     alwaysUnlocked: true
-    requirements: []
+    requirements: [
+        spore-cluster/200
+        bio-mass/150
+    ]
     research: {
         planet: xorinal
         root: true

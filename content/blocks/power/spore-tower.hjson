@@ -1,0 +1,12 @@
+{
+    type: PowerNode
+    size: 1
+    maxNodes: 4
+    laserRange: 6
+    health: 90
+    requirements: [
+        spore-cluster/2
+        mycelium-fiber/2
+    ]
+    research: xorinal-spore-combustor
+}

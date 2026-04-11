@@ -1,0 +1,15 @@
+{
+    planet: xorinal
+    sector: 4
+    captureWave: 15
+    difficulty: 2
+    research: {
+        parent: crash-site
+        objectives: [
+            {
+                type: SectorComplete
+                preset: crash-site
+            }
+        ]
+    }
+}

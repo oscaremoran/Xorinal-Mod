@@ -14,17 +14,19 @@
     lightColor: "4A8C3F80"
     landCloudColor: "3E7B2F80"
     startSector: 0
+    sectorSize: 2
     alwaysUnlocked: true
     defaultCore: xorinal-core-sporocyst
     accessible: true
     visible: true
     clearSectorOnLose: true
     allowWaves: true
-    prebuildBase: false
+    prebuildBase: true
     allowLaunchSchematics: false
     allowLaunchToNumbered: false
     allowLaunchLoadout: false
     allowSectorInvasion: false
+    launchCandidates: []
     generator: {
         octaves: 3
         persistence: 0.5
@@ -41,5 +43,10 @@
         thorium, scrap, surge-alloy, phase-fabric,
         blast-compound, pyratite, beryllium, tungsten,
         oxide, carbide, fissile-matter, dormant-cyst
+    ]
+    itemWhitelist: [
+        xorinal-spore-cluster,
+        xorinal-bio-mass,
+        xorinal-mycelium-fiber
     ]
 }

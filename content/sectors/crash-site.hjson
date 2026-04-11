@@ -1,0 +1,8 @@
+{
+    planet: xorinal
+    sector: 0
+    captureWave: 10
+    difficulty: 1
+    alwaysUnlocked: true
+    research: xorinal-core-sporocyst
+}
