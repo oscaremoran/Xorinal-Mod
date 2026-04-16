@@ -25,5 +25,11 @@
         spore-cluster/35
         bio-mass/20
     ]
-    research: xorinal-spore-extractor
+    research: {
+        parent: xorinal-spore-extractor
+        requirements: [
+            spore-cluster/200
+            bio-mass/150
+        ]
+    }
 }

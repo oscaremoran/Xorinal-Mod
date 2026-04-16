@@ -7,5 +7,10 @@
     requirements: [
         spore-cluster/1
     ]
-    research: xorinal-core-sporocyst
+    research: {
+        parent: xorinal-core-sporocyst
+        requirements: [
+            spore-cluster/10
+        ]
+    }
 }

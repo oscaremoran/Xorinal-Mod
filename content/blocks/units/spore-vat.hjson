@@ -28,5 +28,12 @@
         bio-mass/30
         mycelium-fiber/15
     ]
-    research: xorinal-bio-press
+    research: {
+        parent: xorinal-bio-press
+        requirements: [
+            spore-cluster/1000
+            bio-mass/1000
+            mycelium-fiber/500
+        ]
+    }
 }

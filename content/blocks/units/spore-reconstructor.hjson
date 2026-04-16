@@ -21,5 +21,12 @@
         bio-mass/40
         mycelium-fiber/30
     ]
-    research: xorinal-spore-vat
+    research: {
+        parent: xorinal-spore-vat
+        requirements: [
+            spore-cluster/2000
+            bio-mass/2000
+            mycelium-fiber/1000
+        ]
+    }
 }

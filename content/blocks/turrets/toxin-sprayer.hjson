@@ -25,5 +25,12 @@
         bio-mass/25
         mycelium-fiber/10
     ]
-    research: xorinal-spore-launcher
+    research: {
+        parent: xorinal-spore-launcher
+        requirements: [
+            spore-cluster/175
+            bio-mass/150
+            mycelium-fiber/100
+        ]
+    }
 }

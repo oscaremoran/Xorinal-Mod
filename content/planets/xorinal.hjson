@@ -38,15 +38,4 @@
         radMin: 220
         radMax: 600
     }
-    hiddenItems: [
-        copper, lead, metaglass, graphite, silicon, titanium,
-        thorium, scrap, surge-alloy, phase-fabric,
-        blast-compound, pyratite, beryllium, tungsten,
-        oxide, carbide, fissile-matter, dormant-cyst
-    ]
-    itemWhitelist: [
-        xorinal-spore-cluster,
-        xorinal-bio-mass,
-        xorinal-mycelium-fiber
-    ]
 }
