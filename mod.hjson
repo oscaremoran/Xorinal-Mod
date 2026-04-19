@@ -1,9 +1,9 @@
 name: xorinal
 displayName: "[green]Xorinal[]"
 author: "Oscar Moran"
-description: "A new planet called Xorinal. Currently v0.1.1. Firmly Beta. Try it and if you like it please star on github! Contact me at oscaremoran20@gmail.com. 3 campaign sectors so far, 5 units, and lots of buildings."
+description: "A new planet called Xorinal. Currently v0.1.2. Firmly Beta. Try it and if you like it please star on github! Contact me at oscaremoran20@gmail.com. 3 campaign sectors so far, 5 units, and lots of buildings."
 subtitle: "Spore-themed planet campaign"
-version: "0.1.1"
+version: "0.1.2"
 minGameVersion: "154"
 main: "scripts/main.js"
 repo: "oscaremoran/Xorinal-Mod"
