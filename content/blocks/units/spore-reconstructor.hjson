@@ -5,6 +5,7 @@
     constructTime: 900
     upgrades: [
         [xorinal-sporeling, xorinal-myceloid]
+        [xorinal-drifter, xorinal-speeder]
     ]
     consumes: {
         power: 2

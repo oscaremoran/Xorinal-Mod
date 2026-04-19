@@ -1,0 +1,35 @@
+{
+    type: Reconstructor
+    size: 3
+    health: 900
+    constructTime: 1200
+    upgrades: [
+        [xorinal-myceloid, xorinal-infector]
+    ]
+    consumes: {
+        power: 3
+        items: {
+            items: [
+                spore-cluster/50
+                bio-mass/40
+                mycelium-fiber/25
+                mycelium-plate/10
+            ]
+        }
+    }
+    requirements: [
+        spore-cluster/80
+        bio-mass/60
+        mycelium-fiber/40
+        mycelium-plate/20
+    ]
+    research: {
+        parent: xorinal-spore-reconstructor
+        requirements: [
+            spore-cluster/3000
+            bio-mass/2500
+            mycelium-fiber/1500
+            mycelium-plate/500
+        ]
+    }
+}

@@ -1,0 +1,35 @@
+{
+    type: GenericCrafter
+    size: 3
+    craftTime: 90
+    health: 400
+    hasItems: true
+    hasLiquids: true
+    liquidCapacity: 30
+    outputItem: mycelium-plate/1
+    consumes: {
+        items: {
+            items: [
+                spore-cluster/3
+            ]
+        }
+        liquids: {
+            liquids: [
+                xorinal-spore-solution/0.15
+            ]
+        }
+    }
+    requirements: [
+        spore-cluster/40
+        bio-mass/30
+        mycelium-fiber/20
+    ]
+    research: {
+        parent: xorinal-spore-dissolver
+        requirements: [
+            spore-cluster/500
+            bio-mass/300
+            mycelium-fiber/200
+        ]
+    }
+}

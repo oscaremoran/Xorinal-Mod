@@ -1,0 +1,22 @@
+{
+    planet: xorinal
+    sector: 15
+    captureWave: 20
+    difficulty: 3
+    rules: {
+        attackMode: true
+    }
+    research: {
+        parent: crash-site
+        objectives: [
+            {
+                type: Research
+                content: xorinal-sporeling
+            }
+            {
+                type: Research
+                content: xorinal-bio-press
+            }
+        ]
+    }
+}

@@ -1,0 +1,29 @@
+{
+    type: legs
+    speed: 1.1
+    health: 950
+    armor: 8
+    hitSize: 16
+    legCount: 8
+    legLength: 16
+    legSpeed: 0.25
+    legMoveSpace: 1.0
+    legGroupSize: 2
+    weapons: [
+        {
+            name: infector-weapon
+            reload: 30
+            x: 5
+            y: -2
+            mirror: true
+            bullet: {
+                type: BasicBulletType
+                damage: 18
+                speed: 4
+                lifetime: 30
+                width: 8
+                height: 10
+            }
+        }
+    ]
+}

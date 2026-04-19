@@ -1,0 +1,26 @@
+{
+    type: flying
+    speed: 4.5
+    health: 280
+    armor: 3
+    hitSize: 10
+    engineOffset: 7
+    engineSize: 3
+    weapons: [
+        {
+            name: speeder-weapon
+            reload: 20
+            x: 3
+            y: 0
+            mirror: true
+            bullet: {
+                type: BasicBulletType
+                damage: 12
+                speed: 4.5
+                lifetime: 35
+                width: 6
+                height: 8
+            }
+        }
+    ]
+}
