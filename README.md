@@ -1,33 +1,43 @@
 # Xorinal
 
-A Mindustry planet mod featuring an organic, spore-themed world.
+A Mindustry planet mod featuring an organic, spore-themed world dominated by fungal ecosystems, toxic spore clouds, and bioluminescent colonies.
 
-## About
-
-Xorinal is a living planet dominated by fungal ecosystems, toxic spore clouds, and bioluminescent colonies. Harvest spore clusters and bio-mass to build organic technology and survive the hostile environment.
+**Minimum Mindustry version:** 154 (v8)
 
 ## Installation
 
-1. Download the latest release (or clone this repo)
-2. Place the mod folder in your Mindustry mods directory:
-   - **Linux:** `~/.local/share/Mindustry/mods/`
-   - **Windows:** `%appdata%/Mindustry/mods/`
+### In-game (recommended, once approved)
+Open Mindustry → `Mods` → `Browse` → search for **Xorinal** → `Download`.
+
+### Manual
+1. Download the latest `Xorinal-Mod.zip` from [Releases](https://github.com/oscaremoran/Xorinal-Mod/releases).
+2. Drop the zip into your Mindustry mods directory:
    - **macOS:** `~/Library/Application Support/Mindustry/mods/`
-3. Launch Mindustry and select Xorinal from the planet list
+   - **Windows:** `%appdata%/Mindustry/mods/`
+   - **Linux:** `~/.local/share/Mindustry/mods/`
+3. Restart Mindustry and enable Xorinal under `Mods`.
 
 ## Content
 
 ### Items
-- **Spore Cluster** — Primary raw resource harvested from the planet surface
-- **Bio-Mass** — Organic matter found in deposits
-- **Mycelium Fiber** — Crafted structural material
+- Spore Cluster, Bio-Mass, Mycelium Fiber, Mycelium Plate
 
 ### Liquids
-- **Spore Solution** — Extracted liquid used in advanced crafting
+- Spore Solution
+
+### Units
+- Core Scout, Drifter, Sporeling, Myceloid, Speeder, Infector
 
 ### Blocks
-- Spore Extractor, Bio-Press, Mycelium Conveyor, Spore Launcher, Bio-Wall, Spore Vault
+- Production, distribution, liquid, power, storage, turrets, walls, and unit factories themed around spore/fungal biology.
+
+### Planet
+- Xorinal — a full campaign planet with sectors and custom maps.
+
+## Development
+
+HJSON-only content with a small `scripts/main.js` for game-version compatibility patches. No Java.
 
 ## License
 
-MIT
+MIT — see [LICENSE](LICENSE).
