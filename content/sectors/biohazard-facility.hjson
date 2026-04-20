@@ -1,0 +1,11 @@
+{
+    planet: xorinal
+    sector: 10
+    difficulty: 3
+    rules: {
+        attackMode: true
+    }
+    research: {
+        parent: crash-site
+    }
+}

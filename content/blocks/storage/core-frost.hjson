@@ -1,0 +1,19 @@
+{
+    type: CoreBlock
+    size: 3
+    health: 1100
+    itemCapacity: 4000
+    isFirstTier: true
+    unitType: xorinal-frost-scouter
+    alwaysUnlocked: true
+    requirements: [
+        copper/1000
+        lead/500
+    ]
+    research: {
+        planet: xorinal-tetra
+        root: true
+        name: "Tetra"
+        requiresUnlock: false
+    }
+}

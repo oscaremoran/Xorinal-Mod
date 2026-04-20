@@ -23,4 +23,5 @@
         }
     ]
     research: xorinal-spore-vat
+    alwaysUnlocked: true
 }

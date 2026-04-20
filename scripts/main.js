@@ -71,6 +71,26 @@ Events.run(Trigger.update, () => {
 });
 
 Events.on(ClientLoadEvent, () => {
+    // Xorinal planet icon + label in the main menu (top-right)
+    try {
+        const wrap = new Table();
+        wrap.setFillParent(true);
+        wrap.top().right();
+
+        const inner = new Table();
+        const region = Core.atlas.find("xorinal-planet-icon");
+        inner.image(region).size(250, 250).pad(4);
+        inner.row();
+        const lbl = inner.add("[#2eff78]XORINAL[]");
+        try { lbl.style(Styles.outlineLabel); } catch (e) {}
+        lbl.pad(4);
+
+        wrap.add(inner).pad(20);
+        Vars.ui.menuGroup.addChild(wrap);
+    } catch (e) {
+        Log.err("Xorinal menu icon failed: " + e);
+    }
+
     const t = new Table();
     t.setFillParent(true);
     t.top().right();

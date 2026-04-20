@@ -1,0 +1,5 @@
+{
+    type: OreBlock
+    itemDrop: xorinal-cryonite
+    variants: 3
+}

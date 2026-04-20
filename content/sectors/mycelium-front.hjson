@@ -1,7 +1,6 @@
 {
     planet: xorinal
     sector: 15
-    captureWave: 20
     difficulty: 3
     rules: {
         attackMode: true

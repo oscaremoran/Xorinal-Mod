@@ -1,0 +1,41 @@
+{
+    parent: serpulo
+    solarSystem: sun
+    radius: 0.5
+    orbitRadius: 4
+    orbitTime: 4000
+    rotateTime: 6000
+    hasAtmosphere: true
+    bloom: false
+    atmosphereColor: "a8d8ff60"
+    atmosphereRadIn: 0.02
+    atmosphereRadOut: 0.3
+    iconColor: "d0e8ff"
+    lightColor: "e0f0ff80"
+    landCloudColor: "ffffff80"
+    startSector: 0
+    sectorSize: 2
+    alwaysUnlocked: true
+    defaultCore: xorinal-core-frost
+    accessible: true
+    visible: true
+    clearSectorOnLose: true
+    allowWaves: true
+    prebuildBase: true
+    allowLaunchSchematics: true
+    allowLaunchToNumbered: false
+    allowLaunchLoadout: true
+    allowSectorInvasion: false
+    launchCandidates: []
+    generator: {
+        octaves: 3
+        persistence: 0.5
+        scale: 22
+        mag: 0.6
+        thresh: 1.1
+        min: 100
+        max: 100
+        radMin: 220
+        radMax: 600
+    }
+}

@@ -1,0 +1,16 @@
+{
+    type: Conveyor
+    size: 1
+    health: 40
+    speed: 0.04
+    displayedSpeed: 4.2
+    requirements: [
+        ice/1
+    ]
+    research: {
+        parent: xorinal-core-frost
+        requirements: [
+            ice/20
+        ]
+    }
+}

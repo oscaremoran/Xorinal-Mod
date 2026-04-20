@@ -1,0 +1,52 @@
+{
+    type: ItemTurret
+    size: 2
+    health: 260
+    reload: 40
+    range: 140
+    inaccuracy: 2
+    rotateSpeed: 6
+    recoil: 1
+    shootSound: shoot
+    ammoTypes: {
+        ice: {
+            type: BasicBulletType
+            damage: 14
+            speed: 3.5
+            lifetime: 45
+            width: 7
+            height: 10
+            frontColor: "e6f4ff"
+            backColor: "7fb8e0"
+            hitEffect: hitBulletSmall
+            despawnEffect: hitBulletSmall
+            ammoMultiplier: 2
+        }
+        cryonite: {
+            type: BasicBulletType
+            damage: 28
+            speed: 4
+            lifetime: 45
+            width: 8
+            height: 12
+            frontColor: "9fd4f0"
+            backColor: "3e7ea8"
+            pierce: true
+            pierceCap: 2
+            hitEffect: hitBulletBig
+            despawnEffect: hitBulletBig
+            ammoMultiplier: 3
+        }
+    }
+    requirements: [
+        ice/25
+        cryonite/10
+    ]
+    research: {
+        parent: xorinal-frost-drill
+        requirements: [
+            ice/60
+            cryonite/25
+        ]
+    }
+}

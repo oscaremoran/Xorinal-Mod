@@ -1,0 +1,18 @@
+{
+    type: Drill
+    size: 2
+    tier: 3
+    drillTime: 240
+    health: 100
+    hardnessDrillMultiplier: 20
+    liquidBoostIntensity: 1.6
+    requirements: [
+        ice/15
+    ]
+    research: {
+        parent: xorinal-core-frost
+        requirements: [
+            ice/30
+        ]
+    }
+}
