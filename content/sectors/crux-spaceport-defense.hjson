@@ -1,8 +1,10 @@
 {
     planet: xorinal
     sector: 20
-    captureWave: 25
     difficulty: 2
+    rules: {
+        attackMode: true
+    }
     research: {
         parent: biohazard-facility
         objectives: [
