@@ -1,0 +1,163 @@
+{
+    type: ItemTurret
+    size: 2
+    range: 170
+    reload: 120
+    health: 440
+    targetAir: false
+    targetGround: true
+    inaccuracy: 0
+    rotateSpeed: 3
+    shootSound: shootBig
+    ammoTypes: {
+        mycelium-fiber: {
+            type: ArtilleryBulletType
+            speed: 1.8
+            lifetime: 220
+            drag: 0.06
+            damage: 0
+            width: 14
+            height: 14
+            collides: false
+            collidesTiles: false
+            pierce: true
+            hittable: false
+            absorbable: false
+            trailColor: "8b4fbd"
+            frontColor: "c78fff"
+            backColor: "6a2fa0"
+            hitEffect: none
+            despawnEffect: none
+            bulletInterval: 5
+            intervalBullets: 1
+            intervalBullet: {
+                type: BasicBulletType
+                speed: 0.0001
+                lifetime: 2
+                damage: 0
+                splashDamage: 22
+                splashDamageRadius: 28
+                knockback: -9
+                status: melting
+                statusDuration: 60
+                collides: false
+                collidesTiles: false
+                hittable: false
+                absorbable: false
+                width: 1
+                height: 1
+                hitEffect: none
+                despawnEffect: none
+                trailColor: "8b4fbd"
+                frontColor: "c78fff"
+                backColor: "6a2fa0"
+            }
+            despawnHit: true
+            splashDamage: 160
+            splashDamageRadius: 72
+            fragBullets: 12
+            fragRandomSpread: 360
+            fragVelocityMin: 0.4
+            fragVelocityMax: 0.9
+            fragBullet: {
+                type: BasicBulletType
+                speed: 1.2
+                lifetime: 30
+                damage: 0
+                splashDamage: 50
+                splashDamageRadius: 26
+                knockback: 2
+                status: melting
+                statusDuration: 90
+                pierce: true
+                pierceCap: 3
+                width: 6
+                height: 6
+                trailColor: "c78fff"
+                frontColor: "e6c0ff"
+                backColor: "6a2fa0"
+            }
+        }
+        mycelium-plate: {
+            type: ArtilleryBulletType
+            speed: 1.8
+            lifetime: 340
+            drag: 0.05
+            damage: 0
+            width: 16
+            height: 16
+            collides: false
+            collidesTiles: false
+            pierce: true
+            hittable: false
+            absorbable: false
+            trailColor: "b478d9"
+            frontColor: "e0b0ff"
+            backColor: "7a2fb8"
+            hitEffect: none
+            despawnEffect: none
+            bulletInterval: 4
+            intervalBullets: 1
+            intervalBullet: {
+                type: BasicBulletType
+                speed: 0.0001
+                lifetime: 2
+                damage: 0
+                splashDamage: 42
+                splashDamageRadius: 36
+                knockback: -14
+                status: melting
+                statusDuration: 90
+                collides: false
+                collidesTiles: false
+                hittable: false
+                absorbable: false
+                width: 1
+                height: 1
+                hitEffect: none
+                despawnEffect: none
+                trailColor: "b478d9"
+                frontColor: "e0b0ff"
+                backColor: "7a2fb8"
+            }
+            despawnHit: true
+            splashDamage: 280
+            splashDamageRadius: 100
+            fragBullets: 16
+            fragRandomSpread: 360
+            fragVelocityMin: 0.5
+            fragVelocityMax: 1.1
+            fragBullet: {
+                type: BasicBulletType
+                speed: 1.4
+                lifetime: 40
+                damage: 0
+                splashDamage: 80
+                splashDamageRadius: 32
+                knockback: 3
+                status: melting
+                statusDuration: 120
+                pierce: true
+                pierceCap: 4
+                width: 7
+                height: 7
+                trailColor: "e0b0ff"
+                frontColor: "f5dcff"
+                backColor: "7a2fb8"
+            }
+        }
+    }
+    requirements: [
+        spore-cluster/60
+        bio-mass/40
+        mycelium-fiber/50
+    ]
+    research: {
+        parent: xorinal-toxin-sprayer
+        requirements: [
+            spore-cluster/300
+            bio-mass/200
+            mycelium-fiber/250
+        ]
+    }
+}

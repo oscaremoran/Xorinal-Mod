@@ -1,0 +1,20 @@
+{
+    type: ConsumeGenerator
+    size: 2
+    powerProduction: 1.8
+    itemDuration: 100
+    health: 320
+    hasItems: true
+    consumes: {
+        items: {
+            items: [
+                cryonite/1
+            ]
+        }
+    }
+    requirements: [
+        ice/25
+        cryonite/10
+    ]
+    research: xorinal-frost-drill
+}

@@ -1,0 +1,23 @@
+{
+    type: GenericCrafter
+    size: 2
+    craftTime: 110
+    health: 280
+    hasItems: true
+    hasPower: true
+    outputItem: glacium/1
+    consumes: {
+        power: 1.8
+        items: {
+            items: [
+                cryonite/2
+                ice/1
+            ]
+        }
+    }
+    requirements: [
+        ice/40
+        cryonite/20
+    ]
+    research: xorinal-frost-drill
+}

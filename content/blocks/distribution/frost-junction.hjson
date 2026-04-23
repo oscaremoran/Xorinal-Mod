@@ -1,0 +1,11 @@
+{
+    type: Junction
+    size: 1
+    speed: 26
+    capacity: 6
+    health: 80
+    requirements: [
+        ice/2
+    ]
+    research: xorinal-frost-conveyor
+}

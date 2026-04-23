@@ -1,0 +1,12 @@
+{
+    type: PowerNode
+    size: 1
+    maxNodes: 4
+    laserRange: 6
+    health: 100
+    requirements: [
+        ice/2
+        cryonite/2
+    ]
+    research: xorinal-frost-combustor
+}

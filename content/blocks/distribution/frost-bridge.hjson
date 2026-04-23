@@ -1,0 +1,12 @@
+{
+    type: BufferedItemBridge
+    size: 1
+    range: 4
+    bufferCapacity: 14
+    health: 110
+    requirements: [
+        ice/6
+        cryonite/2
+    ]
+    research: xorinal-frost-junction
+}

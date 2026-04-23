@@ -1,0 +1,41 @@
+{
+    type: flying
+    flying: true
+    speed: 2.6
+    accel: 0.09
+    drag: 0.05
+    rotateSpeed: 6
+    hitSize: 11
+    health: 420
+    armor: 2
+    engineSize: 2.4
+    engineOffset: 7.2
+    range: 120
+    faceTarget: false
+    weapons: [
+        {
+            name: xorinal-rimewing-weapon
+            reload: 22
+            x: 3.5
+            y: 1
+            top: false
+            mirror: true
+            ejectEffect: casing2
+            bullet: {
+                type: BasicBulletType
+                damage: 18
+                speed: 4
+                lifetime: 50
+                width: 8
+                height: 11
+                splashDamage: 10
+                splashDamageRadius: 12
+                frontColor: "cde9ff"
+                backColor: "4ea8d4"
+                shootEffect: shootSmall
+                smokeEffect: shootSmallSmoke
+                ammoMultiplier: 2
+            }
+        }
+    ]
+}

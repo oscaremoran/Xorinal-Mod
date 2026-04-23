@@ -1,0 +1,9 @@
+{
+    type: Wall
+    size: 2
+    health: 2080
+    requirements: [
+        ice/24
+    ]
+    research: xorinal-frost-wall
+}

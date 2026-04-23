@@ -1,0 +1,52 @@
+{
+    type: ItemTurret
+    size: 2
+    health: 280
+    reload: 24
+    range: 170
+    inaccuracy: 8
+    rotateSpeed: 8
+    recoil: 1
+    shootSound: shoot
+    targetAir: true
+    targetGround: false
+    ammoTypes: {
+        ice: {
+            type: FlakBulletType
+            damage: 8
+            speed: 4.2
+            lifetime: 42
+            width: 6
+            height: 8
+            splashDamage: 14
+            splashDamageRadius: 18
+            frontColor: "e6f4ff"
+            backColor: "7fb8e0"
+            ammoMultiplier: 2
+        }
+        cryonite: {
+            type: FlakBulletType
+            damage: 16
+            speed: 4.6
+            lifetime: 42
+            width: 7
+            height: 10
+            splashDamage: 22
+            splashDamageRadius: 22
+            frontColor: "9fd4f0"
+            backColor: "3e7ea8"
+            ammoMultiplier: 3
+        }
+    }
+    requirements: [
+        ice/30
+        cryonite/15
+    ]
+    research: {
+        parent: xorinal-icicle
+        requirements: [
+            ice/80
+            cryonite/35
+        ]
+    }
+}

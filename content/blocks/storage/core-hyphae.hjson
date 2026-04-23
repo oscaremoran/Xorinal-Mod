@@ -1,0 +1,13 @@
+{
+    type: CoreBlock
+    size: 4
+    health: 2400
+    itemCapacity: 7000
+    unitType: xorinal-core-scout
+    requirements: [
+        spore-cluster/40
+    ]
+    research: {
+        parent: xorinal-core-sporocyst
+    }
+}

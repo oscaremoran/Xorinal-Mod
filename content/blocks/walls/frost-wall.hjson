@@ -1,0 +1,9 @@
+{
+    type: Wall
+    size: 1
+    health: 520
+    requirements: [
+        ice/6
+    ]
+    research: xorinal-core-frost
+}

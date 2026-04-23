@@ -1,0 +1,11 @@
+{
+    type: StorageBlock
+    size: 3
+    itemCapacity: 1200
+    health: 680
+    requirements: [
+        ice/50
+        cryonite/20
+    ]
+    research: xorinal-core-frost
+}

@@ -1,0 +1,25 @@
+{
+    type: UnitFactory
+    size: 3
+    health: 480
+    plans: [
+        {
+            unit: xorinal-rimewing
+            time: 1500
+            requirements: [
+                ice/40
+                cryonite/25
+                glacium/15
+            ]
+        }
+    ]
+    consumes: {
+        power: 2.2
+    }
+    requirements: [
+        ice/80
+        cryonite/40
+        glacium/20
+    ]
+    research: xorinal-core-frost
+}

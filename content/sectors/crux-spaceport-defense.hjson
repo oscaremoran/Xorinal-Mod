@@ -1,0 +1,19 @@
+{
+    planet: xorinal
+    sector: 20
+    captureWave: 25
+    difficulty: 2
+    research: {
+        parent: biohazard-facility
+        objectives: [
+            {
+                type: SectorComplete
+                preset: biohazard-facility
+            }
+            {
+                type: SectorComplete
+                preset: mycelium-front
+            }
+        ]
+    }
+}
