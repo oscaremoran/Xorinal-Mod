@@ -1,0 +1,32 @@
+{
+    type: Reconstructor
+    size: 3
+    health: 600
+    constructTime: 1400
+    upgrades: [
+        [xorinal-cryolith, xorinal-cryobreaker]
+    ]
+    consumes: {
+        power: 2.5
+        items: {
+            items: [
+                ice/40
+                cryonite/25
+                glacium/15
+            ]
+        }
+    }
+    requirements: [
+        ice/100
+        cryonite/60
+        glacium/30
+    ]
+    research: {
+        parent: xorinal-frost-hatchery
+        requirements: [
+            ice/2000
+            cryonite/1500
+            glacium/800
+        ]
+    }
+}

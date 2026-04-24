@@ -1,0 +1,43 @@
+{
+    type: mech
+    speed: 0.55
+    health: 720
+    armor: 7
+    hitSize: 15
+    flying: false
+    range: 130
+    rotateSpeed: 3
+    weapons: [
+        {
+            name: xorinal-cryobreaker-weapon
+            reload: 36
+            x: 4.5
+            y: 1
+            top: false
+            mirror: true
+            rotate: true
+            rotateSpeed: 4
+            shootSound: shootBig
+            shake: 2
+            recoil: 2
+            bullet: {
+                type: BasicBulletType
+                damage: 40
+                speed: 3.6
+                lifetime: 50
+                width: 11
+                height: 15
+                pierce: true
+                pierceCap: 2
+                splashDamage: 18
+                splashDamageRadius: 18
+                frontColor: "cde9ff"
+                backColor: "4ea8d4"
+                shootEffect: shootBig
+                smokeEffect: shootBigSmoke
+                ammoMultiplier: 2
+            }
+        }
+    ]
+    research: xorinal-frost-shielder
+}
