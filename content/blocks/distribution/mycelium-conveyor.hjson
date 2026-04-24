@@ -1,16 +1,18 @@
 {
     type: Conveyor
     size: 1
-    speed: 0.04
-    displayedSpeed: 7
-    health: 65
+    speed: 0.11
+    displayedSpeed: 19
+    health: 120
     requirements: [
-        spore-cluster/1
+        spore-cluster/2
+        mycelium-fiber/1
     ]
     research: {
-        parent: xorinal-core-sporocyst
+        parent: xorinal-spore-conveyor
         requirements: [
-            spore-cluster/10
+            spore-cluster/80
+            mycelium-fiber/40
         ]
     }
 }

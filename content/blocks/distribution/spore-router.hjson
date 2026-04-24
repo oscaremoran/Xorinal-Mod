@@ -5,5 +5,5 @@
     requirements: [
         spore-cluster/3
     ]
-    research: xorinal-mycelium-conveyor
+    research: xorinal-spore-conveyor
 }
