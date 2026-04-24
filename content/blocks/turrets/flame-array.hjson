@@ -1,0 +1,60 @@
+{
+    type: ItemTurret
+    size: 4
+    health: 1400
+    range: 130
+    reload: 8
+    inaccuracy: 3
+    rotateSpeed: 4
+    recoil: 1
+    shake: 1
+    shootY: 10
+    shootSound: flame
+    targetAir: false
+    targetGround: true
+    ammoTypes: {
+        bloom-essence: {
+            type: BasicBulletType
+            shootEffect: shootBigSmoke2
+            smokeEffect: none
+            hitEffect: hitFlameSmall
+            despawnEffect: hitFlameSmall
+            damage: 28
+            splashDamage: 16
+            splashDamageRadius: 20
+            speed: 3.6
+            drag: 0.01
+            lifetime: 40
+            hitSize: 10
+            ammoMultiplier: 4
+            pierce: true
+            pierceBuilding: false
+            pierceCap: 4
+            incendChance: 0.6
+            incendAmount: 2
+            status: burning
+            statusDuration: 240
+            frontColor: "ffd07a"
+            backColor: "e04016"
+            trailColor: "e04016"
+            trailLength: 10
+            trailWidth: 3
+            collidesAir: false
+        }
+    }
+    requirements: [
+        bio-mass/160
+        spore-cluster/120
+        mycelium-plate/60
+        bloom-essence/40
+    ]
+    research: {
+        parent: xorinal-flamethrower
+        requirements: [
+            bio-mass/1500
+            spore-cluster/1000
+            mycelium-plate/600
+            bloom-essence/400
+        ]
+    }
+}

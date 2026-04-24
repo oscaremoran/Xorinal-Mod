@@ -1,0 +1,54 @@
+{
+    type: ItemTurret
+    size: 2
+    health: 320
+    range: 70
+    reload: 5
+    inaccuracy: 8
+    rotateSpeed: 8
+    recoil: 0
+    shake: 0.5
+    shootSound: flame
+    shootY: 6
+    targetAir: false
+    targetGround: true
+    ammoTypes: {
+        spore-cluster: {
+            type: BasicBulletType
+            shootEffect: shootSmallFlame
+            smokeEffect: none
+            hitEffect: hitFlameSmall
+            despawnEffect: hitFlameSmall
+            damage: 6
+            speed: 2.8
+            drag: 0.02
+            lifetime: 26
+            hitSize: 6
+            ammoMultiplier: 3
+            pierce: true
+            pierceBuilding: false
+            pierceCap: 2
+            incendChance: 0.35
+            incendAmount: 1
+            status: burning
+            statusDuration: 120
+            frontColor: "ffe08a"
+            backColor: "e2712a"
+            trailColor: "e2712a"
+            trailLength: 6
+            trailWidth: 2
+            collidesAir: false
+        }
+    }
+    requirements: [
+        bio-mass/40
+        spore-cluster/20
+    ]
+    research: {
+        parent: xorinal-toxin-sprayer
+        requirements: [
+            bio-mass/200
+            spore-cluster/120
+        ]
+    }
+}

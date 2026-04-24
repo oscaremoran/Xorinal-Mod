@@ -1,0 +1,49 @@
+{
+    type: flying
+    speed: 3.4
+    accel: 0.08
+    drag: 0.05
+    health: 520
+    armor: 4
+    hitSize: 13
+    engineOffset: 10
+    engineSize: 3.2
+    flying: true
+    range: 80
+    weapons: [
+        {
+            name: sear-weapon
+            reload: 6
+            x: 4
+            y: 1
+            mirror: true
+            shootSound: flame
+            bullet: {
+                type: BasicBulletType
+                damage: 14
+                speed: 3.2
+                drag: 0.02
+                lifetime: 22
+                hitSize: 7
+                pierce: true
+                pierceBuilding: false
+                pierceCap: 3
+                incendChance: 0.5
+                incendAmount: 2
+                status: burning
+                statusDuration: 180
+                shootEffect: shootSmallFlame
+                smokeEffect: none
+                hitEffect: hitFlameSmall
+                despawnEffect: hitFlameSmall
+                frontColor: "ffd07a"
+                backColor: "e25024"
+                trailColor: "e25024"
+                trailLength: 5
+                trailWidth: 2
+                collidesAir: false
+            }
+        }
+    ]
+    research: xorinal-spore-vat
+}
