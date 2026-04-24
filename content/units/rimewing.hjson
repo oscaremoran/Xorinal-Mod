@@ -12,6 +12,7 @@
     engineOffset: 7.2
     range: 120
     faceTarget: false
+    research: xorinal-frost-hatchery
     weapons: [
         {
             name: xorinal-rimewing-weapon
@@ -20,6 +21,8 @@
             y: 1
             top: false
             mirror: true
+            rotate: true
+            rotateSpeed: 6
             ejectEffect: casing2
             bullet: {
                 type: BasicBulletType

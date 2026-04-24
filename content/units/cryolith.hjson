@@ -1,0 +1,37 @@
+{
+    type: mech
+    speed: 0.7
+    health: 320
+    armor: 3
+    hitSize: 11
+    flying: false
+    range: 90
+    weapons: [
+        {
+            name: xorinal-cryolith-weapon
+            reload: 30
+            x: 0
+            y: 2
+            top: false
+            mirror: false
+            rotate: true
+            rotateSpeed: 5
+            bullet: {
+                type: BasicBulletType
+                damage: 22
+                speed: 3.2
+                lifetime: 40
+                width: 9
+                height: 12
+                splashDamage: 8
+                splashDamageRadius: 14
+                frontColor: "cde9ff"
+                backColor: "4ea8d4"
+                shootEffect: shootSmall
+                smokeEffect: shootSmallSmoke
+                ammoMultiplier: 2
+            }
+        }
+    ]
+    research: xorinal-frost-hatchery
+}

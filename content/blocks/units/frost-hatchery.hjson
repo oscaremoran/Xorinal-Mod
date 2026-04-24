@@ -4,6 +4,14 @@
     health: 480
     plans: [
         {
+            unit: xorinal-cryolith
+            time: 1100
+            requirements: [
+                ice/30
+                cryonite/15
+            ]
+        }
+        {
             unit: xorinal-rimewing
             time: 1500
             requirements: [

@@ -1,0 +1,9 @@
+{
+    type: Router
+    size: 1
+    health: 50
+    requirements: [
+        ice/3
+    ]
+    research: xorinal-frost-conveyor
+}
