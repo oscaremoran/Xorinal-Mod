@@ -1,0 +1,37 @@
+{
+    type: GenericCrafter
+    size: 3
+    craftTime: 180
+    health: 520
+    hasItems: true
+    hasLiquids: true
+    hasPower: true
+    liquidCapacity: 30
+    outputItem: xorinal-spore-crystal/1
+    consumes: {
+        power: 3.5
+        items: {
+            items: [
+                spore-cluster/4
+                bio-mass/2
+            ]
+        }
+        liquid: {
+            liquid: xorinal-spore-solution
+            amount: 0.2
+        }
+    }
+    requirements: [
+        spore-cluster/120
+        bio-mass/80
+        mycelium-fiber/60
+    ]
+    research: {
+        parent: xorinal-bombardment-chamber
+        requirements: [
+            spore-cluster/600
+            bio-mass/400
+            mycelium-fiber/300
+        ]
+    }
+}

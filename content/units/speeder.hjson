@@ -3,15 +3,15 @@
     speed: 4.5
     health: 280
     armor: 3
-    hitSize: 10
-    engineOffset: 7
-    engineSize: 3
+    hitSize: 12
+    engineOffset: 9
+    engineSize: 3.5
     weapons: [
         {
             name: speeder-weapon
             reload: 20
-            x: 3
-            y: 0
+            x: 4
+            y: -1
             mirror: true
             bullet: {
                 type: BasicBulletType

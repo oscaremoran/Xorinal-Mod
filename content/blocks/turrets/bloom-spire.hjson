@@ -1,0 +1,75 @@
+{
+    type: ItemTurret
+    size: 4
+    range: 440
+    reload: 240
+    health: 1800
+    targetAir: true
+    targetGround: true
+    inaccuracy: 0
+    rotateSpeed: 1.4
+    shootSound: shootBig
+    shootShake: 4
+    recoil: 5
+    cooldownTime: 120
+    ammoTypes: {
+        bloom-essence: {
+            type: BasicBulletType
+            damage: 1400
+            speed: 14
+            lifetime: 36
+            width: 16
+            height: 48
+            pierce: true
+            pierceCap: 12
+            pierceBuilding: true
+            status: bleeding
+            statusDuration: 600
+            splashDamage: 120
+            splashDamageRadius: 36
+            frontColor: "ffd4ff"
+            backColor: "c04fff"
+            trailColor: "ff8cff"
+            trailLength: 36
+            trailWidth: 4
+            hitShake: 4
+        }
+        spore-crystal: {
+            type: BasicBulletType
+            damage: 600
+            speed: 12
+            lifetime: 40
+            width: 14
+            height: 36
+            pierce: true
+            pierceCap: 6
+            pierceBuilding: false
+            status: bleeding
+            statusDuration: 600
+            frontColor: "e6a0ff"
+            backColor: "9b40e0"
+            trailColor: "d46bff"
+            trailLength: 28
+            trailWidth: 3
+        }
+    }
+    requirements: [
+        spore-cluster/800
+        bio-mass/600
+        mycelium-fiber/500
+        mycelium-plate/300
+        spore-crystal/200
+        bloom-essence/80
+    ]
+    research: {
+        parent: xorinal-spore-lance
+        requirements: [
+            spore-cluster/3000
+            bio-mass/2000
+            mycelium-fiber/1500
+            mycelium-plate/800
+            spore-crystal/500
+            bloom-essence/200
+        ]
+    }
+}

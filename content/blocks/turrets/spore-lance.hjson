@@ -1,0 +1,82 @@
+{
+    type: ItemTurret
+    size: 3
+    range: 320
+    reload: 110
+    health: 780
+    targetAir: true
+    targetGround: true
+    inaccuracy: 0
+    rotateSpeed: 2
+    shootSound: shootSnap
+    ammoTypes: {
+        bloom-essence: {
+            type: BasicBulletType
+            damage: 520
+            speed: 11
+            lifetime: 40
+            width: 12
+            height: 28
+            pierce: true
+            pierceCap: 6
+            pierceBuilding: false
+            status: bleeding
+            statusDuration: 600
+            frontColor: "ffd4ff"
+            backColor: "c04fff"
+            trailColor: "ff8cff"
+            trailLength: 22
+            trailWidth: 3
+            hitShake: 2
+        }
+        mycelium-plate: {
+            type: BasicBulletType
+            damage: 160
+            speed: 9
+            lifetime: 40
+            width: 10
+            height: 22
+            pierce: true
+            pierceCap: 4
+            pierceBuilding: false
+            status: melting
+            statusDuration: 120
+            frontColor: "e0b0ff"
+            backColor: "7a2fb8"
+            trailColor: "b478d9"
+            trailLength: 14
+            trailWidth: 2
+        }
+        mycelium-fiber: {
+            type: BasicBulletType
+            damage: 90
+            speed: 8
+            lifetime: 42
+            width: 8
+            height: 18
+            pierce: true
+            pierceCap: 2
+            pierceBuilding: false
+            frontColor: "c78fff"
+            backColor: "6a2fa0"
+            trailColor: "8b4fbd"
+            trailLength: 12
+            trailWidth: 2
+        }
+    }
+    requirements: [
+        spore-cluster/120
+        bio-mass/90
+        mycelium-fiber/80
+        mycelium-plate/40
+    ]
+    research: {
+        parent: xorinal-spore-rift
+        requirements: [
+            spore-cluster/500
+            bio-mass/350
+            mycelium-fiber/300
+            mycelium-plate/150
+        ]
+    }
+}

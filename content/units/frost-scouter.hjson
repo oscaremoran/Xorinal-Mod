@@ -29,7 +29,7 @@
             ejectEffect: casing1
             bullet: {
                 type: BasicBulletType
-                damage: 11
+                damage: 0.1
                 speed: 2.5
                 lifetime: 60
                 width: 7

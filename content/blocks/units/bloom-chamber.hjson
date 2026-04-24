@@ -1,0 +1,53 @@
+{
+    type: UnitFactory
+    size: 5
+    health: 2400
+    plans: [
+        {
+            unit: xorinal-mycelith
+            time: 4200
+            requirements: [
+                spore-cluster/1200
+                bio-mass/900
+                mycelium-fiber/700
+                mycelium-plate/400
+                spore-crystal/250
+                bloom-essence/100
+            ]
+        }
+        {
+            unit: xorinal-overmind
+            time: 4200
+            requirements: [
+                spore-cluster/1000
+                bio-mass/800
+                mycelium-fiber/700
+                mycelium-plate/400
+                spore-crystal/220
+                bloom-essence/100
+            ]
+        }
+    ]
+    consumes: {
+        power: 8
+    }
+    requirements: [
+        spore-cluster/1000
+        bio-mass/800
+        mycelium-fiber/600
+        mycelium-plate/400
+        spore-crystal/250
+        bloom-essence/120
+    ]
+    research: {
+        parent: xorinal-growth-chamber
+        requirements: [
+            spore-cluster/5000
+            bio-mass/4000
+            mycelium-fiber/3000
+            mycelium-plate/1500
+            spore-crystal/800
+            bloom-essence/400
+        ]
+    }
+}

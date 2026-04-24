@@ -1,0 +1,78 @@
+{
+    type: legs
+    speed: 0.55
+    health: 24000
+    armor: 26
+    hitSize: 28
+    legCount: 6
+    legLength: 38
+    legSpeed: 0.14
+    legMoveSpace: 1.15
+    legGroupSize: 3
+    legBaseOffset: 10
+    legStraightness: 0.5
+    rotateSpeed: 1.3
+    flying: false
+    weapons: [
+        {
+            name: mycelith-weapon
+            reload: 40
+            x: 9
+            y: 2
+            mirror: true
+            shootSound: shootBig
+            shake: 3
+            recoil: 4
+            rotate: true
+            shootY: 8
+            bullet: {
+                type: BasicBulletType
+                damage: 200
+                speed: 9
+                lifetime: 40
+                width: 14
+                height: 36
+                pierce: true
+                pierceCap: 4
+                pierceBuilding: false
+                status: bleeding
+                statusDuration: 120
+                splashDamage: 60
+                splashDamageRadius: 20
+                frontColor: "ffd4ff"
+                backColor: "c04fff"
+                trailColor: "ff8cff"
+                trailLength: 22
+                trailWidth: 3
+                hitShake: 2
+            }
+        }
+        {
+            name: mycelith-weapon
+            reload: 50
+            x: 5
+            y: -6
+            mirror: true
+            rotate: true
+            shootY: 6
+            bullet: {
+                type: BasicBulletType
+                damage: 140
+                speed: 8
+                lifetime: 42
+                width: 10
+                height: 28
+                pierce: true
+                pierceCap: 3
+                status: bleeding
+                statusDuration: 120
+                frontColor: "ffd4ff"
+                backColor: "c04fff"
+                trailColor: "ff8cff"
+                trailLength: 16
+                trailWidth: 2
+            }
+        }
+    ]
+    research: xorinal-bloom-chamber
+}

@@ -1,0 +1,34 @@
+{
+    type: flying
+    speed: 5.2
+    health: 620
+    armor: 6
+    hitSize: 16
+    engineOffset: 12
+    engineSize: 4.5
+    weapons: [
+        {
+            name: blaster-weapon
+            reload: 12
+            x: 5
+            y: -2
+            mirror: true
+            shootSound: shootBig
+            bullet: {
+                type: BasicBulletType
+                damage: 22
+                speed: 6
+                lifetime: 35
+                width: 7
+                height: 11
+                pierce: true
+                pierceCap: 2
+                status: melting
+                statusDuration: 60
+                frontColor: "e0b0ff"
+                backColor: "7a2fb8"
+            }
+        }
+    ]
+    research: xorinal-growth-chamber
+}

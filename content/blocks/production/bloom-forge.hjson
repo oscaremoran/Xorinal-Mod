@@ -1,0 +1,33 @@
+{
+    type: GenericCrafter
+    size: 3
+    craftTime: 240
+    health: 640
+    hasItems: true
+    hasPower: true
+    outputItem: xorinal-bloom-essence/1
+    consumes: {
+        power: 5
+        items: {
+            items: [
+                xorinal-spore-crystal/2
+                mycelium-plate/1
+            ]
+        }
+    }
+    requirements: [
+        spore-cluster/200
+        bio-mass/150
+        mycelium-fiber/100
+        mycelium-plate/40
+    ]
+    research: {
+        parent: xorinal-crystal-synthesizer
+        requirements: [
+            spore-cluster/1200
+            bio-mass/800
+            mycelium-fiber/500
+            mycelium-plate/200
+        ]
+    }
+}

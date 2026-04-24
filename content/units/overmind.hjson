@@ -1,0 +1,97 @@
+{
+    type: flying
+    speed: 1.4
+    health: 18000
+    armor: 16
+    hitSize: 26
+    engineOffset: 18
+    engineSize: 6
+    rotateSpeed: 1.4
+    weapons: [
+        {
+            name: overmind-weapon
+            reload: 6
+            x: 9
+            y: 4
+            mirror: true
+            rotate: true
+            shootY: 5
+            inaccuracy: 6
+            shootSound: shootBig
+            bullet: {
+                type: BasicBulletType
+                damage: 42
+                speed: 7
+                lifetime: 34
+                width: 10
+                height: 14
+                splashDamage: 28
+                splashDamageRadius: 18
+                frontColor: "a8ff7e"
+                backColor: "2aa83e"
+                trailColor: "6fff4a"
+                trailLength: 10
+                trailWidth: 2
+                hitEffect: sporeSlowed
+                status: bleeding
+                statusDuration: 120
+            }
+        }
+        {
+            name: overmind-weapon
+            reload: 8
+            x: 5
+            y: -6
+            mirror: true
+            rotate: true
+            shootY: 4
+            inaccuracy: 8
+            bullet: {
+                type: BasicBulletType
+                damage: 36
+                speed: 7
+                lifetime: 36
+                width: 10
+                height: 14
+                splashDamage: 24
+                splashDamageRadius: 16
+                frontColor: "a8ff7e"
+                backColor: "2aa83e"
+                trailColor: "6fff4a"
+                trailLength: 10
+                trailWidth: 2
+                status: bleeding
+                statusDuration: 120
+            }
+        }
+        {
+            name: overmind-core-beam
+            reload: 10
+            x: 0
+            y: 0
+            mirror: false
+            rotate: false
+            controllable: false
+            autoTarget: true
+            continuous: true
+            alwaysContinuous: true
+            shootSound: none
+            bullet: {
+                type: ContinuousLaserBulletType
+                damage: 1.7
+                length: 240
+                lifetime: 30
+                width: 5
+                largeHit: true
+                frontColor: "baffbe"
+                colors: ["6fff4a80", "a8ff7e", "e6ffe0"]
+                status: bleeding
+                statusDuration: 120
+                drawSize: 420
+                collidesAir: true
+                collidesGround: true
+            }
+        }
+    ]
+    research: xorinal-bloom-chamber
+}

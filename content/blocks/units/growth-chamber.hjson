@@ -5,6 +5,7 @@
     constructTime: 1200
     upgrades: [
         [xorinal-myceloid, xorinal-infector]
+        [xorinal-speeder, xorinal-blaster]
     ]
     consumes: {
         power: 3
