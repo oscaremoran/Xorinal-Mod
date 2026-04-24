@@ -26,6 +26,8 @@
             x: 2.75
             y: 0.5
             top: false
+            rotate: true
+            mirror: false
             ejectEffect: casing1
             bullet: {
                 type: BasicBulletType

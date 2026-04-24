@@ -83,7 +83,6 @@
                 lifetime: 30
                 width: 5
                 largeHit: true
-                frontColor: "baffbe"
                 colors: ["6fff4a80", "a8ff7e", "e6ffe0"]
                 status: bleeding
                 statusDuration: 120

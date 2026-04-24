@@ -1,5 +1,4 @@
 {
-    type: StatusEffect
     color: "b3006b"
     damage: 30
     reloadMultiplier: 0.85

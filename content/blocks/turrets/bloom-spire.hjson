@@ -9,7 +9,7 @@
     inaccuracy: 0
     rotateSpeed: 1.4
     shootSound: shootBig
-    shootShake: 4
+    shake: 4
     recoil: 5
     cooldownTime: 120
     ammoTypes: {

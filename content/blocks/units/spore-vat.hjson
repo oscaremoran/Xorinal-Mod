@@ -19,6 +19,14 @@
                 bio-mass/15
             ]
         }
+        {
+            unit: xorinal-sear
+            time: 900
+            requirements: [
+                spore-cluster/25
+                bio-mass/20
+            ]
+        }
     ]
     consumes: {
         power: 1.2

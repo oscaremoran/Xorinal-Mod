@@ -1,8 +1,8 @@
 {
     type: PowerNode
-    size: 1
-    maxNodes: 4
-    laserRange: 6
+    size: 2
+    maxNodes: 6
+    laserRange: 8
     health: 90
     requirements: [
         spore-cluster/2
