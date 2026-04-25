@@ -5,6 +5,7 @@
     constructTime: 1400
     upgrades: [
         [xorinal-cryolith, xorinal-cryobreaker]
+        [xorinal-rimewing, xorinal-glacierwing]
     ]
     consumes: {
         power: 2.5

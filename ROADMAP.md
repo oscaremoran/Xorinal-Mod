@@ -21,7 +21,7 @@
 ## Milestone 1 — Content gaps (block + unit tree)
 
 **Units** (current: frost-scouter T1 worker, cryolith T1 mech, rimewing T2 flying):
-- [ ] T2 ground mech (heavier than Cryolith — pierce/AoE role)
+- [X] T2 ground mech (heavier than Cryolith — pierce/AoE role)
 - [ ] T3 ground walker or boss-tier mech (Mycelith-equivalent for Tetra)
 - [ ] T1 flying scout's T2/T3 successors (Rimewing already T2; needs T3)
 - [ ] Optional: support/healer unit (cryo-medic style)

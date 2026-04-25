@@ -7,9 +7,9 @@
     rotateTime: 8000
     hasAtmosphere: true
     bloom: false
-    atmosphereColor: "3E7B2F40"
+    atmosphereColor: "5faa3a80"
     atmosphereRadIn: 0.02
-    atmosphereRadOut: 0.3
+    atmosphereRadOut: 0.4
     iconColor: "3E7B2F"
     lightColor: "4A8C3F80"
     landCloudColor: "3E7B2F80"

@@ -1,0 +1,47 @@
+{
+    type: flying
+    flying: true
+    speed: 2.0
+    accel: 0.08
+    drag: 0.05
+    rotateSpeed: 5
+    hitSize: 16
+    health: 850
+    armor: 5
+    engineSize: 3.2
+    engineOffset: 9.5
+    range: 150
+    faceTarget: false
+    research: xorinal-frost-shielder
+    weapons: [
+        {
+            name: xorinal-glacierwing-weapon
+            reload: 28
+            x: 5
+            y: 1.5
+            top: false
+            mirror: true
+            rotate: true
+            rotateSpeed: 5
+            shootSound: shootBig
+            ejectEffect: casing2
+            bullet: {
+                type: BasicBulletType
+                damage: 32
+                speed: 4.5
+                lifetime: 55
+                width: 10
+                height: 14
+                splashDamage: 16
+                splashDamageRadius: 16
+                pierce: true
+                pierceCap: 2
+                frontColor: "cde9ff"
+                backColor: "4ea8d4"
+                shootEffect: shootBig
+                smokeEffect: shootBigSmoke
+                ammoMultiplier: 2
+            }
+        }
+    ]
+}

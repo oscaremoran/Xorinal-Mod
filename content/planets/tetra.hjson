@@ -7,9 +7,9 @@
     rotateTime: 6000
     hasAtmosphere: true
     bloom: false
-    atmosphereColor: "a8d8ff60"
+    atmosphereColor: "a8d8ff80"
     atmosphereRadIn: 0.02
-    atmosphereRadOut: 0.3
+    atmosphereRadOut: 0.4
     iconColor: "d0e8ff"
     lightColor: "e0f0ff80"
     landCloudColor: "ffffff80"
@@ -22,9 +22,9 @@
     clearSectorOnLose: true
     allowWaves: true
     prebuildBase: true
-    allowLaunchSchematics: true
+    allowLaunchSchematics: false
     allowLaunchToNumbered: false
-    allowLaunchLoadout: true
+    allowLaunchLoadout: false
     allowSectorInvasion: false
     launchCandidates: []
     generator: {

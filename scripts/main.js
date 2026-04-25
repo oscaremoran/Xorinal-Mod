@@ -382,7 +382,85 @@ Events.run(Trigger.update, () => {
 });
 
 
+// ==================== Planet meshes ====================
+// meshLoader is a Prov<PlanetMesh>, so it must be assigned from JS, not hjson.
+function _setupPlanetMeshes() {
+    try {
+        const NoiseMesh = Packages.mindustry.graphics.g3d.NoiseMesh;
+        const HexSkyMesh = Packages.mindustry.graphics.g3d.HexSkyMesh;
+        const MultiMesh = Packages.mindustry.graphics.g3d.MultiMesh;
+        const HexMesh = Packages.mindustry.graphics.g3d.HexMesh;
+
+        // NoiseMesh(planet, seed, divisions, radius, octaves, persistence, scale, mag, ...colors)
+        function noiseMesh(planet, seed, divisions, radius, mag, colorHexes) {
+            const cols = colorHexes.map(c => Color.valueOf(c));
+            const args = [planet, seed, divisions, radius, 6, 0.55, 1.6, mag];
+            for (let i = 0; i < cols.length; i++) args.push(cols[i]);
+            return NoiseMesh.class.getConstructors()[0].newInstance(args);
+        }
+
+        // NoiseMesh(planet, seed, divisions, radius, octaves, persistence, scale, mag, ...colors)
+        function makeNoise(planet, seed, divisions, octaves, persistence, scale, mag, colorHexes) {
+            const c = colorHexes.map(h => Color.valueOf(h));
+            // expand to 8 colors max — pad with last if shorter
+            while (c.length < 8) c.push(c[c.length - 1]);
+            return new NoiseMesh(planet, seed, divisions, 0.6,
+                octaves, persistence, scale, mag,
+                c[0], c[1], c[2], c[3], c[4], c[5], c[6], c[7]);
+        }
+
+        // HexSkyMesh(planet, seed, speed, radius, divisions, color, octaves, persistence, scale, threshold)
+        function clouds(planet, layers) {
+            const meshes = layers.map(L =>
+                new HexSkyMesh(planet, L.seed, L.speed, L.radius, L.divisions,
+                    Color.valueOf(L.color), L.octaves, L.persistence, L.scale, L.threshold));
+            return new MultiMesh(meshes);
+        }
+
+        const tetra = Vars.content.getByName(ContentType.planet, "xorinal-tetra");
+        const xorinal = Vars.content.getByName(ContentType.planet, "xorinal-xorinal");
+
+        if (tetra != null) {
+            // 8 stops: deep crevasse → trench ice → ocean → frozen sea → cracked ice → snow → glacier → peaks
+            tetra.meshLoader = () => makeNoise(tetra, 7, 8, 7, 0.55, 1.5, 0.55,
+                ["0e2440","1a3d63","265e85","4ea8d4","8ec8e8","b8dcef","e6f4ff","ffffff"]);
+            tetra.cloudMeshLoader = () => clouds(tetra, [
+                // dense low cloud
+                { seed: 2, speed: 0.20, radius: 0.205, divisions: 6, color: "ffffff90", octaves: 3, persistence: 0.55, scale: 1.0, threshold: 0.60 },
+                // mid wispy
+                { seed: 5, speed: 0.12, radius: 0.225, divisions: 6, color: "cde9ff70", octaves: 3, persistence: 0.6,  scale: 1.5, threshold: 0.62 },
+                // high faint cirrus
+                { seed: 11, speed: 0.06, radius: 0.245, divisions: 5, color: "e6f4ff40", octaves: 2, persistence: 0.5,  scale: 2.2, threshold: 0.7 }
+            ]);
+        }
+        if (xorinal != null) {
+            // 8 stops: deep moss → swamp → spore floor → mid spore → bright spore → bloom → highland → bright highland
+            xorinal.meshLoader = () => makeNoise(xorinal, 13, 8, 7, 0.55, 1.5, 0.6,
+                ["0c1f10","17371a","244a26","3E7B2F","5fa840","8ec860","b6dc7c","e0f0a8"]);
+            xorinal.cloudMeshLoader = () => clouds(xorinal, [
+                // spore drift dense
+                { seed: 4, speed: 0.18, radius: 0.205, divisions: 6, color: "9fd47880", octaves: 3, persistence: 0.55, scale: 1.1, threshold: 0.58 },
+                // mid wisp
+                { seed: 9, speed: 0.10, radius: 0.225, divisions: 6, color: "c8e6a060", octaves: 3, persistence: 0.6,  scale: 1.6, threshold: 0.62 },
+                // high bloom haze
+                { seed: 17, speed: 0.05, radius: 0.245, divisions: 5, color: "e0f0a830", octaves: 2, persistence: 0.5,  scale: 2.3, threshold: 0.7 }
+            ]);
+        }
+    } catch (e) {
+        Log.err("[Xorinal] planet mesh setup failed: " + e);
+        try {
+            const HexMesh = Packages.mindustry.graphics.g3d.HexMesh;
+            const tetra = Vars.content.getByName(ContentType.planet, "xorinal-tetra");
+            const xorinal = Vars.content.getByName(ContentType.planet, "xorinal-xorinal");
+            if (tetra != null) tetra.meshLoader = () => new HexMesh(tetra, 6);
+            if (xorinal != null) xorinal.meshLoader = () => new HexMesh(xorinal, 6);
+        } catch (e2) {}
+    }
+}
+
 Events.on(ClientLoadEvent, () => {
+    _setupPlanetMeshes();
+
     // Xorinal planet icon + label in the main menu (top-right)
     try {
         const wrap = new Table();
