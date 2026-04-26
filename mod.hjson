@@ -15,7 +15,7 @@ description:
 subtitle: "Planet campaign"
 version: "1.4"
 minGameVersion: "154"
-main: "scripts/main.js"
+main: "xorinal.XorinalMod"
 repo: "oscaremoran/Xorinal-Mod"
-java: false
+java: true
 hidden: false

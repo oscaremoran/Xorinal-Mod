@@ -1,0 +1,9 @@
+{
+    type: Wall
+    size: 1
+    health: 600
+    requirements: [
+        mycelium-fiber/6
+    ]
+    research: xorinal-bio-wall
+}

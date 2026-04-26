@@ -31,7 +31,8 @@
             ejectEffect: casing1
             bullet: {
                 type: BasicBulletType
-                damage: 0.1
+                damage: 11
+                buildingDamageMultiplier: 0.00909
                 speed: 2.5
                 lifetime: 60
                 width: 7

@@ -1,0 +1,9 @@
+{
+    type: Wall
+    size: 2
+    health: 3040
+    requirements: [
+        bloom-essence/24
+    ]
+    research: xorinal-bloom-wall
+}

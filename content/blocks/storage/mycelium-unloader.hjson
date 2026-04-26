@@ -1,0 +1,19 @@
+{
+    type: Unloader
+    size: 1
+    speed: 4
+    health: 70
+    requirements: [
+        spore-cluster/25
+        mycelium-fiber/15
+        bio-mass/10
+    ]
+    research: {
+        parent: xorinal-spore-vault
+        requirements: [
+            spore-cluster/120
+            mycelium-fiber/80
+            bio-mass/60
+        ]
+    }
+}

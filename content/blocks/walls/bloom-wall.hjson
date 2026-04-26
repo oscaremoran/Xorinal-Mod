@@ -1,0 +1,9 @@
+{
+    type: Wall
+    size: 1
+    health: 760
+    requirements: [
+        bloom-essence/6
+    ]
+    research: xorinal-mycelium-wall
+}
