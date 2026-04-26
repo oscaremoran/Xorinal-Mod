@@ -13,7 +13,7 @@ description:
     Please star if you like the mod! Our goal right now is 10 stars. If we get there, I'll add Xorinal t5!
     '''
 subtitle: "Planet campaign"
-version: "1.4"
+version: "1.5"
 minGameVersion: "154"
 main: "xorinal.XorinalMod"
 repo: "oscaremoran/Xorinal-Mod"
