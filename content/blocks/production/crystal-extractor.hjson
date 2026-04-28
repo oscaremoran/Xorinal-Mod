@@ -1,0 +1,31 @@
+{
+    type: AttributeCrafter
+    size: 2
+    craftTime: 90
+    health: 320
+    hasItems: true
+    hasPower: true
+    attribute: crystal
+    minEfficiency: 0.5
+    boostScale: 1.0
+    maxBoost: 1.5
+    outputItem: xorinal-spore-crystal/1
+    consumes: {
+        power: 2.0
+    }
+    requirements: [
+        mycelium-fiber/40
+        bio-mass/35
+        spore-crystal/15
+        mycelium-plate/20
+    ]
+    research: {
+        parent: xorinal-crystal-synthesizer
+        requirements: [
+            mycelium-fiber/200
+            bio-mass/150
+            spore-crystal/80
+            mycelium-plate/100
+        ]
+    }
+}

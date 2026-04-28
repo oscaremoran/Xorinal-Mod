@@ -1,0 +1,11 @@
+{
+    planet: xorinal
+    sector: 22
+    difficulty: 9
+    rules: {
+        attackMode: true
+    }
+    research: {
+        parent: crux-spaceport
+    }
+}

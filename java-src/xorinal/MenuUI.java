@@ -7,6 +7,9 @@ import arc.scene.ui.layout.Table;
 import arc.util.Log;
 import mindustry.Vars;
 import mindustry.game.EventType.ClientLoadEvent;
+import arc.struct.Seq;
+import mindustry.game.Team;
+import mindustry.gen.Building;
 import mindustry.gen.Groups;
 import mindustry.ui.Styles;
 
@@ -40,8 +43,20 @@ public class MenuUI {
             t.setFillParent(true);
             t.top().right();
             t.button("Win Sector", () -> {
+                Log.info("[Xorinal] Win Sector clicked (isGame=" + Vars.state.isGame() + " sector=" + Vars.state.rules.sector + ")");
                 if (!Vars.state.isGame() || Vars.state.rules.sector == null) return;
+                Log.info("[Xorinal] Win Sector pressed: attackMode=" + Vars.state.rules.attackMode
+                    + " playerTeam=" + Vars.player.team() + " buildCount=" + Groups.build.size());
                 Groups.unit.each(u -> { if (u.team != Vars.player.team()) u.kill(); });
+
+                Seq<Building> snap = new Seq<>();
+                Groups.build.each(b -> { if (b.team != Vars.player.team()) snap.add(b); });
+                Log.info("[Xorinal] Win Sector enemy buildings: " + snap.size);
+                for (Building b : snap) {
+                    try { b.health = 0f; } catch (Exception ex) { Log.err("[Xorinal] health set: " + ex); }
+                    try { if (b.tile != null) b.tile.remove(); } catch (Exception ex) { Log.err("[Xorinal] tile.remove: " + ex); }
+                }
+
                 if (Vars.state.rules.winWave > 0) {
                     Vars.state.wave = Math.max(Vars.state.wave, Vars.state.rules.winWave + 1);
                 }

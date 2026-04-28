@@ -1,0 +1,59 @@
+{
+    type: ItemTurret
+    size: 2
+    range: 200
+    reload: 4
+    health: 360
+    targetAir: true
+    targetGround: true
+    inaccuracy: 14
+    rotateSpeed: 9
+    shootSound: shootSnap
+    recoil: 0.6
+    shake: 0.3
+    ammoTypes: {
+        bio-mass: {
+            type: BasicBulletType
+            damage: 3
+            speed: 5
+            lifetime: 38
+            width: 4
+            height: 7
+            status: poisoned
+            statusDuration: 60
+            frontColor: "c8ffb0"
+            backColor: "5fff6f"
+            trailColor: "8cff8c"
+            trailLength: 6
+            trailWidth: 1
+        }
+        mycelium-fiber: {
+            type: BasicBulletType
+            damage: 5
+            speed: 5.6
+            lifetime: 38
+            width: 4
+            height: 8
+            status: poisoned
+            statusDuration: 90
+            frontColor: "c8ffb0"
+            backColor: "5fff6f"
+            trailColor: "8cff8c"
+            trailLength: 8
+            trailWidth: 1
+        }
+    }
+    requirements: [
+        spore-cluster/60
+        bio-mass/40
+        mycelium-fiber/30
+    ]
+    research: {
+        parent: xorinal-spore-lance
+        requirements: [
+            spore-cluster/250
+            bio-mass/180
+            mycelium-fiber/120
+        ]
+    }
+}

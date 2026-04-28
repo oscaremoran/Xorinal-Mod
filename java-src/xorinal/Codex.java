@@ -51,6 +51,9 @@ public class Codex {
         new Entry("spaceport-down", "Spaceport Down", "Mysteries", "Hard",
             "Capture Crux Spaceport.",
             "The marker you found at the crash site pointed inland. Inland led here. The glyphs on the spaceport gates match the glyphs on the marker — older than the Crux, older than their alloys. They were never speaking to the Crux. They were speaking to whoever the Crux replaced."),
+        new Entry("the-bloomheart", "The Bloomheart", "Mysteries", "Hard",
+            "Capture Bloomheart Hollow.",
+            "The glade was quiet when you arrived, in the way a held breath is quiet. At its center, the Bloomheart — older than the Crux, older than the glyphs at the spaceport, older than any name still spoken in your language. The Crux had ringed it with watchposts, not to guard it, but to keep it from waking. You woke it anyway. When the last petal fell and the bloom opened, the air pulsed once, twice, and then the Sporocyst answered from across half the planet. Whatever speaks through Xorinal has finally heard you speaking back. You are not sure whether it is pleased."),
         new Entry("foothold", "Foothold", "Milestones", "Hard",
             "Capture 5 sectors on Xorinal or Tetra.",
             "Five sectors held. Five different patches of dirt where the Sporocyst has rooted and refused to leave. The colony is no longer a wreck — it is a pattern, and patterns attract attention.")
@@ -88,6 +91,7 @@ public class Codex {
                 if (!"xorinal-xorinal".equals(pn) && !"xorinal-tetra".equals(pn)) return;
                 if ("xorinal-xorinal".equals(pn) && e.sector.id == 0) unlock("wreckage-and-ritual");
                 if ("xorinal-xorinal".equals(pn) && e.sector.id == 21) unlock("spaceport-down");
+                if ("xorinal-xorinal".equals(pn) && e.sector.id == 22) unlock("the-bloomheart");
                 String dedupeKey = "xorinal-codex-cap-" + pn + "-" + e.sector.id;
                 if (!Core.settings.getBool(dedupeKey, false)) {
                     Core.settings.put(dedupeKey, true);
